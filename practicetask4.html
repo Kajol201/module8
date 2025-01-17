@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Task 4</title>
+</head>
+<style>
+    .div1 {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-gap: 8px;
+
+    }
+
+    .div1 img {
+        width: 100%;
+
+
+
+    }
+
+    .div1 .secondary button {
+        background-color: blue;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .div2 {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-gap: 8px;
+        margin-top: 10px;
+
+    }
+
+    .div2 img {
+        width: 100%;
+
+
+
+    }
+
+    .div2 .secondary button {
+        background-color: blue;
+        color: white;
+        border-radius: 5px;
+    }
+
+    @media screen and (max-width:576px) {
+        .div1 {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .div1 img {
+            width: 100%;
+            height: 30vh;
+        }
+
+        .div1 .secondary {
+            width: 100%;
+            height: 100%;
+        }
+
+        .div2 {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .div2 img {
+            width: 100%;
+            height: 30vh;
+        }
+
+        .div2 .secondary {
+            width: 100%;
+            height: 70vh;
+        }
+
+    }
+</style>
+
+<body>
+    <section class="main">
+        <div class="div1">
+            <img src="images/food.jpeg" alt="">
+            <div class="secondary">
+                <h2>The Delecious Food burger</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum perferendis rerum suscipit adipisci quo
+                    iusto, asperiores neque itaque error similique tempore cupiditate qui libero? Rerum dicta architecto
+                    expedita reprehenderit temporibus!</p>
+                <button>Read more</button>
+
+            </div>
+        </div>
+        <div class="div2">
+            <img src="images/food1.jpeg" alt="">
+            <div class="secondary">
+                <h2>The Delecious Food Chicken Fry</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum perferendis rerum suscipit adipisci quo
+                    iusto, asperiores neque itaque error similique tempore cupiditate qui libero? Rerum dicta architecto
+                    expedita reprehenderit temporibus!</p>
+                <button>Read more</button>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
