@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Task 1</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 200px auto;
+        }
+
+        .left-div {
+            background-color: aquamarine;
+            margin: 5px;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+
+        }
+
+        .right-div {
+            background-color: blueviolet;
+            margin: 5px;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width:576px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .left-div {
+                height: 30vh;
+            }
+
+            .right-div {
+                height: 70vh;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-div">Left</div>
+        <div class="right-div">Right</div>
+    </div>
+</body>
+
+</html>
